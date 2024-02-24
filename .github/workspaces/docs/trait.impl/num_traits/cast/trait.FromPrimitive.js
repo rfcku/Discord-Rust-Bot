@@ -1,0 +1,5 @@
+(function() {var implementors = {
+"chrono":[["impl <a class=\"trait\" href=\"num_traits/cast/trait.FromPrimitive.html\" title=\"trait num_traits::cast::FromPrimitive\">FromPrimitive</a> for <a class=\"enum\" href=\"chrono/enum.Weekday.html\" title=\"enum chrono::Weekday\">Weekday</a>"],["impl <a class=\"trait\" href=\"num_traits/cast/trait.FromPrimitive.html\" title=\"trait num_traits::cast::FromPrimitive\">FromPrimitive</a> for <a class=\"enum\" href=\"chrono/enum.Month.html\" title=\"enum chrono::Month\">Month</a>"]],
+"num_traits":[],
+"serenity_voice_model":[["impl <a class=\"trait\" href=\"serenity_voice_model/trait.FromPrimitive.html\" title=\"trait serenity_voice_model::FromPrimitive\">FromPrimitive</a> for <a class=\"enum\" href=\"serenity_voice_model/enum.CloseCode.html\" title=\"enum serenity_voice_model::CloseCode\">CloseCode</a>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

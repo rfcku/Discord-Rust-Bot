@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["CloseCode","Event","Opcode"],"mod":["constants","id","payload"],"struct":["ProtocolData","SpeakingState"],"trait":["FromPrimitive"]};

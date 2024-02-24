@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["attachmentinput","handler","id","modal","numberinput","ping","register","welcome","wonderful_command"]};
