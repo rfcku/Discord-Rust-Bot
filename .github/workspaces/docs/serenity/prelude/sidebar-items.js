@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["SerenityError"],"struct":["Mutex","RwLock","TypeMap"],"trait":["TypeMapKey"]};

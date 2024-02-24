@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["channel_history","handle","is_bot_mention","is_command","is_not_bot_message","is_ping","is_private","message_role","should_respond","to_history"]};

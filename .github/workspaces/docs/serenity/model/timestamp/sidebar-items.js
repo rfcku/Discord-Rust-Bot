@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":["InnerError","InvalidTimestamp","ParseError","Timestamp"]};
