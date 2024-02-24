@@ -24,7 +24,7 @@ To get your Discord bot up and running, follow these steps:
 1. **Clone the repository**
 
 ```
-git clone https://github.com/yourusername/rust-discord-bot-starter.git
+git clone https://github.com/rfcku/rust-bot-starter-kit/tree/main
 
 cd rust-discord-bot-starter
 ```
