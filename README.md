@@ -16,7 +16,7 @@ To get your Discord bot up and running, follow these steps:
 ### Prerequisites
 
 - Rust and Cargo installed on your machine.
-- A Discord Bot Token ([How to create a Discord bot](https://discord.com/developers/docs/intro)).
+- A Discord Bot Token ([Discord Developers](https://discord.com/developers/docs/intro)).
 - An OpenAI API Key ([OpenAI API](https://openai.com/api/)).
 
 ### Installation
@@ -47,7 +47,7 @@ cargo build
 cargo run
 ```
 
-### Adding Commands
+## Adding Commands
 
 Usage
 After starting the bot, it will be online in your Discord server. You can interact with it using slash commands that you define.
@@ -55,12 +55,14 @@ After starting the bot, it will be online in your Discord server. You can intera
 Adding New Slash Commands
 To add a new slash command:
 
-Define the command in src/commands.rs.
-Update the command handler in src/main.rs to include your new command.
+Define the command in `src/commands.rs`.
+Update the command handler in `src/main.rs` to include your new command.
 Integrating with OpenAI
-The starter kit includes a basic OpenAI integration example. To utilize OpenAI's capabilities:
+The starter kit includes a basic OpenAI integration example. To utilize 
 
-Use the provided OpenAI client in src/openai.rs to make requests.
+## OpenAI's capabilities:
+
+Use the provided OpenAI client in `src/services/openai.rs` to make requests.
 Process the OpenAI API responses according to your application's needs.
 
 ```rust
