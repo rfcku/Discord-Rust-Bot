@@ -1,3 +1,5 @@
+[![Rust](https://github.com/rfcku/rust-bot-starter-kit/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/rfcku/rust-bot-starter-kit/actions/workflows/rust.yml)
+
 # Rust Discord Bot Starter Kit
 
 This Discord Bot is a starter kit built using Rust, designed to get you up and running with your own Discord bot that utilizes slash commands and integrates with OpenAI's powerful AI models. It's perfect for developers looking to explore Discord bot development with Rust's performance and safety features.

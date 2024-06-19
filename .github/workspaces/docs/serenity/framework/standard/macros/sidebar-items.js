@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"attr":["check","command","group","help","hook"]};

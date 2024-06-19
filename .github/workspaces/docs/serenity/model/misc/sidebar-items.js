@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["ImageHashParseError"],"struct":["EmojiIdentifier","EmojiIdentifierParseError","ImageHash","Incident","IncidentUpdate","Maintenance"]};
