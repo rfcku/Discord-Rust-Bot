@@ -6,7 +6,9 @@ pub fn run(options: &[ResolvedOption]) -> String {
         value: ResolvedValue::Attachment(attachment), ..
     }) = options.first()
     {
-        format!("Attachment name: {}, attachment size: {}", attachment.filename, attachment.size)
+        format!("Attachment name: {}, attachment size: {}", attachment.filename, attachment.size);
+        attachment.url.to_string()
+
     } else {
         "Please provide a valid attachment".to_string()
     }

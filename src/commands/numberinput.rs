@@ -21,3 +21,7 @@ pub fn register() -> CreateCommand {
             .required(true),
         )
 }
+
+pub fn run(options: &[serenity::model::application::ResolvedOption]) -> String {
+    "Some Number stuff!".to_string()
+}

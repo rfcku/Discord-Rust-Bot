@@ -31,7 +31,5 @@ pub fn run(options: &[serenity::model::application::ResolvedOption]) -> String {
 
     println!("THIOS OPTIONS -0>>>>> {:?}", options);
 
-
-    format!("Welcome")
-    // format!("Welcome, {}! {}", user.name, message)
+    "Welcome to the server!".to_string()
 }

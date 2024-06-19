@@ -69,27 +69,22 @@ pub fn to_history(messages: Vec<Message>) -> Vec<serde_json::Value> {
     history
 }
 
-pub async fn handle(ctx: &Context, msg: &Message) -> () {
-
+pub async fn handle(ctx: &Context, msg: &Message) {
+    println!("Handling message: {:?}", msg.content);
     if should_respond(msg) {
-        msg.channel_id.broadcast_typing(&ctx.http).await.unwrap();
-        if is_ping(msg) || is_command(msg) {
-            let _ = msg.channel_id.say(&ctx.http, "Pong!").await;
-            return;
-        }
-
-        let messages = channel_history(ctx, msg).await;
-        let history = to_history(messages);
-
-        let response: String = match OpenAi::new().create_completion( &msg.content, history ).await {
-            Ok(response) => response,
-            Err(e) => {
-                println!("Error creating run: {:?}", e);
+        if is_command(msg) {
+            if is_ping(msg) {
+                let _ = msg.channel_id.say(&ctx.http, "Pong!").await;
                 return;
             }
-        };
-        
-        msg.channel_id.say(&ctx.http, format!("{}", response)).await.unwrap();
+        }
+
+        msg.channel_id.broadcast_typing(&ctx.http).await.unwrap();
+        let history = to_history(channel_history(ctx, msg).await);
+        let response = OpenAi::new()
+        .create_completion(&msg.content, history).await.unwrap();
+        let _ = msg.channel_id.say(&ctx.http, format!("{}", response)).await;
         return;
     }
+    return;
 }

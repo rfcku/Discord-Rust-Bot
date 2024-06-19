@@ -11,22 +11,21 @@ use serenity::model::gateway::Ready;
 use serenity::prelude::*;
 use serenity::model::application::Interaction;
 
-
 struct Handler;
 
 #[async_trait]
 impl EventHandler for Handler {
- 
-    async fn message(&self, ctx: Context, msg: Message) {
-        messages::main::handle(&ctx, &msg).await;
-    }
-
+    
     async fn interaction_create(&self, ctx: Context, interaction: Interaction) {
         commands::handler::handle(&ctx, &interaction).await;
     }
-
+    
     async fn ready(&self, ctx: Context, ready: Ready) {
         commands::register::register(ctx, ready).await;        
+    }
+   
+    async fn message(&self, ctx: Context, msg: Message) {
+        messages::main::handle(&ctx, &msg).await;
     }
 
 }
